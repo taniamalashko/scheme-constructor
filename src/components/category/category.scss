@@ -1,0 +1,153 @@
+.custom-category {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__lines {
+    &:first-child::before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      left: calc(50% - 30px);
+      width: 62%;
+      height: 2px;
+      background-color: #bebdbd;
+    }
+
+    &:last-child::before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: calc(50% - -30px);
+      width: 63%;
+      height: 2px;
+      background-color: #bebdbd;
+    }
+
+    &:not(:first-child):not(:last-child)::before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      right: calc(50% - -31px);
+      width: 63%;
+      height: 2px;
+      background-color: #bebdbd;
+    }
+
+    &:not(:first-child):not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: -30px;
+      left: calc(50% - 31px);
+      width: 62%;
+      height: 2px;
+      background-color: #bebdbd;
+    }
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    position: relative;
+
+    &--title,
+    &--input {
+      min-width: 130px;
+      text-align: center;
+      padding: 10px 20px;
+      border: 1px dashed #bebdbd;
+    }
+
+    &--input {
+      display: inline-block;
+      min-width: 130px;
+      text-align: center;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: 1px dashed #bebdbd;
+    }
+
+    &--icons {
+      display: flex;
+      gap: 5px;
+    }
+  }
+
+  &__top-line,
+  &__bot-line {
+    content: "";
+    height: 30px;
+    width: 2px;
+    background-color: #bebdbd;
+    position: absolute;
+    left: calc(50% - 30px);
+    transform: translateX(-50%);
+    top: -30px;
+  }
+
+  &__bot-line {
+    top: 40px;
+  }
+
+  &__subcategories {
+    display: flex;
+    flex-direction: column;
+
+    &--gap {
+      display: flex;
+      gap: 60px;
+    }
+  }
+}
+
+.icon {
+  width: 14px;
+  height: 14px;
+  fill: #fff !important;
+  color: #fff !important;
+}
+
+.colored-plus-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #A4C2F4;
+  position: relative;
+}
+
+.colored-save-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #B7E1B4;
+}
+
+.colored-edit-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #FFEE9A;
+}
+
+.colored-delete-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #ECA2B3;
+  cursor: pointer;
+}

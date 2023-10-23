@@ -1,0 +1,55 @@
+.add-item-modal {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  width: 300px;
+}
+
+.add-item-modal h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.add-item-modal button:not(:last-child) {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+
+.modal-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.cancel-button {
+  position: absolute;
+  top: -30px;
+  right: -10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+}
