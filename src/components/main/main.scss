@@ -1,0 +1,90 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  flex: 1;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.centerDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  cursor: default;
+  touch-action: none;
+}
+
+.arrow-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 5;
+
+  & svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    transition: 0.3s ease;
+  }
+
+  &:hover {
+    background-color: #666;
+  }
+}
+
+.up {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 35px;
+}
+
+.arrowUp {
+  transform: rotate(90deg);
+}
+
+.down {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 35px;
+}
+
+.arrowDown {
+  transform: rotate(-90deg);
+}
+
+.left {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 120px;
+}
+
+.right {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 120px;
+}
+
+.arrowRight {
+  transform: rotate(180deg);
+}
