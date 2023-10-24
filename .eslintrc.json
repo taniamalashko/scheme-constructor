@@ -1,9 +1,0 @@
-{
-  "extends": [
-    "airbnb",
-    "airbnb-typescript"
-  ],
-  "parserOptions": {
-    "project": "/users/mac/desktop/test/scheme-constructor/tsconfig.json"
-  }
-}
